@@ -20,7 +20,7 @@ Mein Ablauf war:
 
 
 
-![Wireframes](docs/Wireframes/Mobile page.png)
+![Wireframes](docs/Wireframes/Mobile-page.png)
 
 -	Die benutzten Farben gesucht und festgelegt.
 
