@@ -32,10 +32,10 @@ body {
 /* Start Header */
 
 header {
-    background-color: white;
+    background-color: rgb(122, 121, 121);
     position: relative;
     box-shadow: 0 0 10px #ddd;
-    border-bottom: 10px solid var(--text-color);
+    border-bottom: 10px solid #274d6c;
 }
 
 .logo-container {
@@ -65,20 +65,31 @@ background-color: var(--primary);
 
 /* Start Nav */ 
 
+.nav {
+    
+     position: sticky;
+     top: 0;
+     background-color: white;
+     z-index: 100;
+ }
+
+
+
 
 .nav-bar {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    
+    font-size: 20px;
     display: flex;
     box-shadow: 0 0 10px #ddd;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    
     padding-bottom: 20px;
+    
 }
 
 
@@ -116,7 +127,9 @@ transition: var(--main-transition);
     left: 0;
 }
 
-
+#ko .content-text > ul > a:hover {
+    color: #2196f3;
+}
 
 
 
@@ -133,13 +146,6 @@ a {
 
 
 
-@media (max-width: 767px) {
-    .nav-bar {
-        padding-top: 0;
-        padding-bottom: 15px;
-        overflow: scroll;
-    }
-}
 
 
 
@@ -150,56 +156,326 @@ a {
 /* Start Personal Info Section */
 
 
-.contact {
+.about {
   display: flex;
   max-width: 870px;
   width: 100%;
   padding: 16px;  
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   box-shadow: 0 0 10px #ddd;
   gap: 30px;
   justify-content: center;
+  
 }
 
 
 
 
 
-.contact-list {
+.about-list {
   margin-top: 16px;  
 }
 
 
-.social {
-    margin-top: 16px;
-}
 
-.contact div img {
+
+.about div img {
     max-width: 350px;
     height: auto;
 }
 
 
-@media (max-width: 767px) {
-    .contact {
-        display: block;
-     margin-top: 0;
-        
-    }
 
-
-
-    .contact-img > img {
-        max-height: 330px;
-        }
-
-    
-}
   
 
 /* End Personal Info Section */
+
+/*  Start Service  */
+
+.services{
+    
+    margin-top: 40px;
+    margin-bottom: 100px;
+    max-width: 1199px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/3);
+    height: 300px;
+    border: solid 5px #f1f1f1;
+    padding: 24px;
+
+}
+
+.service-box:hover {
+    background-color: var(--primary);
+}
+
+
+
+.service-box:hover svg path {
+    fill: white;
+}
+
+.service-icon > svg {
+
+    width: 60px;
+    height: 60px;
+    color: #333;
+    margin-bottom: 8px;
+    transition: all .3s ease;
+}
+
+.service-name h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #333;
+    
+    transition: all .3s ease;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.service-box:hover .service-name h3 ,.service-box:hover .service-text {
+color: white;
+}
+
+.service-text {
+
+    text-align: center;
+}
+
+.services > h1 {
+    
+}
+
+/*  End Service  */
+
+/* Start Projects */
+
+section#projects {
+    margin-top: 32px ;
+    margin-bottom: 32px;
+}
+
+
+
+.projects-boxs { 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
+}
+
+
+.box {
+position: relative;
+    width: calc(100%/4);
+    height: 300px;
+    border: solid 3px black;
+}
+
+
+
+.box-img > img{
+    
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+.box-name {
+
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: 0.2s opacity ease ;
+    
+}
+
+.box:hover .box-name  {
+    opacity: 1;
+
+}
+
+
+
+/* end Projects */
+
+
+
+/*  Start Contact Section  */
+
+
+section#co {
+    background-image: url(/img/contact.jpg);
+    height: 966px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+  }
+
+  section#co .content-text {
+    width: 50%;
+    z-index: 2;
+   
+  }
+
+  section#co .content-text h2,
+  section#co .content-text ul li,
+  section#co .content-text ul li h4 {
+    color: white;
+  }
+
+
+ 
+  section#co form {
+    width: 50%;
+    z-index: 2;
+  }
+ 
+  .map iframe {
+    width: 100%;
+    z-index: 2;
+  }
+
+
+  section#co::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    
+  }
+
+ 
+section#co h2{
+  margin-top: 0px;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+section#co .content-text ul {
+  list-style : none;
+}
+
+  section#co  ul li {
+  margin-top: 0px;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  }
+
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+select{
+  width: 220px;
+  padding: 10px;
+}
+  
+
+section#co{
+  padding-top: 32px;
+}
+
+section#co form label {
+  color: white;
+  display: block;
+}
+ section#co form input:not(input[type="submit"])  {
+   width: 400px;
+   border: none;
+   background: transparent;
+   border-bottom: 1px solid rgb(243, 243, 243);
+   margin-bottom: 16px;
+   color: white;
+   padding: 8px;
+ }
+
+ section#co form input[type="submit"]{
+   width: 400px;
+   padding: 8px;
+   border: none;
+   background: white;
+   cursor: pointer;
+   margin-bottom: 16px;
+ }
+
+
+ section#co form textarea {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+ resize: none;
+background: transparent;
+border-bottom: 1px solid rgb(243, 243, 243);
+color: white;
+display: block;
+margin-bottom: 4px;
+
+}
+
+
+/*  End Contact Section  */
+
 
 
 
@@ -207,7 +483,7 @@ a {
 
 footer {
     background-color: var(--primary);
-    height: 55px;
+    width: 100%;
     display: flex;
     align-items:center ;
     justify-content : space-between;
@@ -215,9 +491,11 @@ footer {
 }
 
 
+
+
 .footer-logo > a  img {
 width: 100px;
-height: 79px;
+height: 100%;
 
 }
 
@@ -225,4 +503,128 @@ height: 79px;
     display: flex;
     align-items: center;
     justify-content:space-around;
+}
+
+
+.social-right {
+    display: flex;
+    
+    margin-right: 10px;
+}
+
+
+
+/* End Fotter */
+
+
+
+
+
+@media only screen and (max-width:767px) {
+   
+    .nav-bar {
+        padding-top: 0;
+        padding-bottom: 15px;
+        overflow: scroll;
+        gap: 16px;
+    }
+   
+    .nav .nav-bar > li > a {
+        font-size: 16px;
+    }
+   
+   
+    .about {
+        flex-direction: column;
+    }
+    .about div img {
+        width: 100%;
+    }
+
+
+    .services-container {
+        flex-wrap: wrap;
+    }
+
+
+    .service-box {
+        width: 100%;
+    }
+    
+
+    .box {
+        width: 100%;
+    } 
+
+    .box-name {
+        opacity: 1;
+    }
+
+    section#co {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    section#co .content-text {
+        width: 100%;
+    }
+
+
+    section#co ul li {
+        font-size: 16px;
+    }
+
+
+
+    section#co form {
+        width: 100%;
+        padding:0 16px ;
+    }
+
+
+    section#co form  input , section#co form textarea{
+        width: 100% !important;
+        
+    }
+
+    
+
+
+  
+}
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+    section#co {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    section#co .content-text {
+        width: 100%;
+    }
+
+
+    .box {
+        width: calc(100%/2 - 10px);
+    }
+
+
+
+    section#co form {
+        width: 100%;
+        padding:0 16px ;
+    }
+
+
+    section#co form  input , section#co form textarea{
+        width: 100% !important;
+        
+    }
+
 }
