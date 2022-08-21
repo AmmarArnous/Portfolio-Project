@@ -3,32 +3,32 @@
 This repo is for my Portfolio Project
 
 
-
- ## Die verwendeten Farben
-
  
 
 Meine Aufgabe war es, eine Webseite mit meinem Portfolio zu erstellen. 
 Mein Ablauf war: 
--	Wireframes für Handy und PC erstellt :
--   Large screen Wireframes
+#####	Wireframes für Handy und PC erstellt :
 
-
-![Wireframes](docs/Wireframes/Pc-Page.png)
-
--  Small Screen Wireframes
+* Large screen Wireframes
 
 
 
-![Wireframes](docs/Wireframes/Mobile-page.png)
+     ![Wireframes](docs/Wireframes/Pc-Page.png)
+---
 
--	Die benutzten Farben gesucht und festgelegt.
+* Small Screen Wireframes
+
+
+    ![Wireframes](docs/Wireframes/Mobilepage.png)
+
+---
+#####	Die benutzten Farben gesucht und festgelegt
 
 
 
 ![Foto](docs/Farben/Color.png)
 
-
+---
 
 -	Coding erstellt 
 Begründung Design:
