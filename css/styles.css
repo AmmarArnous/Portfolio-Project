@@ -46,18 +46,7 @@ background-color: var(--primary);
     
 }
 
-@media (max-width: 767px) {
-    header {
-        border-bottom: 7px solid #343a40;
-    }   
 
-
-    header .logo-container {
-        width: 100%;
-        height: 90px;
-
-    }
-}
 
 /* End Header */
 
@@ -127,7 +116,7 @@ transition: var(--main-transition);
     left: 0;
 }
 
-#ko .content-text > ul > a:hover {
+#co .content-text > ul > a:hover {
     color: #2196f3;
 }
 
@@ -521,6 +510,25 @@ height: 100%;
 
 
 @media only screen and (max-width:767px) {
+
+
+
+
+
+    
+    header {
+        border-bottom: 7px solid #274d6c;
+    }   
+    
+    
+    header .logo-container {
+        width: 100%;
+        height: 90px;
+    
+    }
+    
+
+
    
     .nav-bar {
         padding-top: 0;
