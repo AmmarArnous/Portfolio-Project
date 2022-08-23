@@ -13,7 +13,7 @@ Mein Ablauf war:
 
 
 
-     ![Wireframes](docs/Wireframes/Pc-Page.png)
+     ![Wireframes](docs/Wireframes/pc-page.png)
 ---
 
 * Small Screen Wireframes
